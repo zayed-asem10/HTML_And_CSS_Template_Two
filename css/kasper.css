@@ -174,8 +174,18 @@ header nav .form i {
   display: flex;
   justify-content: flex-end;
 }
+@media (max-width: 767px) {
+  .landing .text {
+    width: 100%;
+  }
+}
 .landing .text .content {
   max-width: 500px;
+}
+@media (max-width: 767px) {
+  .landing .text .content {
+    width: 100%;
+  }
 }
 .landing .text .content h2 {
   font-size: 32px;
@@ -186,6 +196,34 @@ header nav .form i {
 .landing .text .content p {
   font-size: 14px;
   line-height: 2;
-
+}
+.landing .change-background {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: #ddd;
+}
+.landing .fa-angle-left {
+  left: 30px;
+}
+.landing .fa-angle-right {
+  right: 30px;
+}
+.landing .bullets {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 30px;
+  display: flex;
+}
+.landing .bullets li {
+  width: 20px;
+  height: 20px;
+  border: 1px solid white;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.landing .bullets li.active {
+  background-color: var(--main-color);
 }
 /* end landing */
